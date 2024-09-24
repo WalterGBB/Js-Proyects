@@ -1,0 +1,46 @@
+h4 {
+  text-align: center;
+}
+
+ul {
+  margin: auto 30vw;
+}
+
+.juego {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2em;
+}
+
+.ocultos {
+  /*Ocultamos los elementos antes de de que el usuario inicie el juego*/
+  display: none;
+}
+
+input[type="button"] {
+  margin: 20px 0;
+  padding: 15px 30px;
+  font-size: 0.9em;
+  font-weight: bold;
+  font-family: cursive;
+  border: 3px solid #1c0021;
+  background-color: #1c3166;
+  color: white;
+  border-radius: 10px;
+}
+
+input[type="button"]:hover {
+  cursor: pointer;
+  background-color: #40ffdc;
+  color: #1c0021;
+}
+
+.juego label {
+  color: #1c0021;
+  font-weight: bolder;
+}
+
+input[type="number"] {
+  width: 50px;
+  font-size: 1.1em;
+}

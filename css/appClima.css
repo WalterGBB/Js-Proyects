@@ -1,0 +1,53 @@
+.contenedor {
+  max-width: 500px;
+  margin: 2% auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #1c0021;
+  box-shadow: 0 3px 20px #1c0021;
+}
+
+h2 {
+  color: #40ffdc;
+}
+
+p {
+  margin: 15px auto;
+}
+
+img {
+  margin-left: 15px; /* Genera espacio entre el icono y el titulo h2 de la ciudad  */
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 70%;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  font-weight: 700;
+}
+
+button:hover {
+  filter: brightness(105%);
+}
+
+#datosClima {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+#tituloCiudad {
+  /*Configuración para centrar el texto del h2 con el icono de su respectivo clima*/
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  margin: 0 auto;
+}

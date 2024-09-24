@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/calculadora.css">
+    <link rel="shortcut icon" href="/assets/favicon.ico.svg">
+    <title>Calculadora</title>
+</head>
+
+<body>
+
+
+    <header>
+        <h3>Calculadora básica</h3>
+        <p>No soporta operaciones combinadas que incluyan los símbolo de "%" y "√"</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a class="active" href="calculadora.html">Calculadora</a>
+            <a href="juego.html">Juego</a>
+            <a href="viajes.html">Venta de Viajes</a>
+            <a href="appClima.html">API Clima</a>
+            <a href="formulario.html">Validar Formulario</a>
+            <a href="buscadorPeliculas.html">Buscador de Películas</a>
+        </nav>
+    </header>
+
+    <div class="calculadora">
+        <input type="text" id="pantalla" readonly> <!--readonly determina que no se pueda escribir en la pantalla-->
+
+        <input type="button" value="AC" onclick="reset()">
+        <input type="button" value="%" onclick="agregar('%')">
+        <input type="button" value="√" onclick="agregar('√')">
+        <input type="button" value="C" onclick="borrar()">
+
+        <input type="button" value="7" onclick="agregar('7')">
+        <input type="button" value="8" onclick="agregar('8')">
+        <input type="button" value="9" onclick="agregar('9')">
+        <input type="button" value="÷" onclick="agregar('/')">
+
+        <input type="button" value="4" onclick="agregar('4')">
+        <input type="button" value="5" onclick="agregar('5')">
+        <input type="button" value="6" onclick="agregar('6')">
+        <input type="button" value="x" onclick="agregar('*')">
+
+        <input type="button" value="1" onclick="agregar('1')">
+        <input type="button" value="2" onclick="agregar('2')">
+        <input type="button" value="3" onclick="agregar('3')">
+        <input type="button" value="-" onclick="agregar('-')">
+
+        <input type="button" value="0" onclick="agregar('0')">
+        <input type="button" value="." onclick="agregar('.')">
+        <input type="button" value="^" onclick="agregar('**')">
+        <input type="button" value="+" onclick="agregar('+')">
+
+        <input type="button" class="igual" value="=" onclick="calcular()">
+    </div>
+
+    <script src="js/calculadora.js"></script>
+
+    <footer>
+        Todos los derechos reservados &copy; WazTerBel - 2024
+    </footer>
+
+</body>
+
+</html>

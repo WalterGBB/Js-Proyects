@@ -1,0 +1,44 @@
+.calculadora {
+  margin: 2% auto;
+  padding: 5vh 0;
+  width: 385px;
+  background-color: #1c0021;
+  border: 7px solid #1c3166;
+  box-shadow: 0 3px 20px #1c3166;
+  border-radius: 5%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+  justify-content: center;
+}
+
+input {
+  font-size: 1.2em;
+}
+
+/* Estilos para todos los inputs de la calculadora excepto el de '=' que es el último hijo del contenedor de clase .calculadora*/
+.calculadora input[type="button"]:not(:last-child) {
+  width: 70px;
+  height: 40px;
+  border: 2px solid grey;
+  border-radius: 15%;
+}
+
+.calculadora input[type="button"]:hover {
+  background-color: #bebebe;
+}
+
+.calculadora input[type="text"] {
+  grid-column: 1 / -1; /*Permite que el input text ocupe todo el ancho del contenedor (todas las calumnas del grid)*/
+  height: 40px;
+  border: 2px solid grey;
+  border-radius: 15%;
+}
+
+.igual {
+  width: 100%; /*Permite que el input text ocupe todo el ancho del contenedor (todas las calumnas del grid)*/
+  grid-column: 1 / -1; /*Permite que el input text ocupe todo el ancho del contenedor (todas las calumnas del grid)*/
+  height: 40px;
+  border: 2px solid grey;
+  border-radius: 8%;
+}

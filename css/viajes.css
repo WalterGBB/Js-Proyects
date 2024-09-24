@@ -1,0 +1,57 @@
+body {
+  height: 1200px; /*Para que position: sticky del header y fixed de ul funcionen, el body debe tener una altura fija */
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+ul {
+  position: fixed;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  height: 100%;
+  background-color: #1c0021;
+}
+
+iframe {
+  margin: 30px 20px 12px 22px;
+  border: 2px solid #1c0021;
+  border-radius: 10px;
+}
+
+img {
+  width: 520px;
+  height: 300px;
+  float: right;
+  margin: 38px 5px 15px 20px;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li a.active {
+  background-color: #00a9d4;
+  color: #1c0021;
+}
+
+li a:hover:not(.active) {
+  background-color: #00aad478;
+  color: white;
+}
+
+.contenedor {
+  top: 25%;
+  margin-left: 25.5%;
+  padding: 1px 16px;
+  color: #1c0021;
+  text-align: justify;
+}

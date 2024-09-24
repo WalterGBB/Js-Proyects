@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/favicon.ico.svg">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/viajes.css">
+    <title>Proyectos JS</title>
+</head>
+
+<body>
+
+
+    <header>
+        <h3>Venta de viajes para la empresa XYZ</h3>
+        <p>Navegación dinámica para obtener información sobre distintas ciudades (SIN CAMBIAR DE PÁGINA)</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="calculadora.html">Calculadora</a>
+            <a href="juego.html">Juego</a>
+            <a class="active" href="viajes.html">Venta de Viajes</a>
+            <a href="appClima.html">API Clima</a>
+            <a href="formulario.html">Validar Formulario</a>
+            <a href="buscadorPeliculas.html">Buscador de Películas</a>
+        </nav>
+    </header>
+
+    <ul>
+        <li><a>Barcelona</a></li>
+        <li><a>Roma</a></li>
+        <li><a>París</a></li>
+        <li><a>Londres</a></li>
+        <iframe id="ubicacion" src="" width="295" style="border: none;" height="240" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" hidden>
+        </iframe>
+    </ul>
+
+    <div class="contenedor">
+        <img id="imagen" src="" alt="imagen de la ciudad" hidden>
+        <h2 id="titulo">Bienvenidos a XYZ viajeros amantes de la aventura</h2>
+        <h3 id="subtitulo">Elije tu próximo destino</h3>
+        <h3 id="precio"></h3>
+        <p id="parrafo">Aprovecha nuestros descuentos promocionales</p>
+    </div>
+
+    <script type="module" src="/js/viajes.js"></script>
+    <!-- La importancia de usar type="module" en la etiqueta script en HTML radica en que
+    esto indica al navegador que el script que se está cargando es un módulo de JS.
+    Esto permite que el código del script se comporte de manera diferente en comparación
+    con los scripts regulares. (viajes.js extrae información de infoCiudades.js) -->
+    <footer>
+        Todos los derechos reservados &copy; WazTerBel - 2024
+    </footer>
+
+</body>
+
+</html>

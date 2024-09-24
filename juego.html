@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/favicon.ico.svg">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/juego.css">
+    <title>Proyectos JS</title>
+</head>
+
+<body>
+
+
+    <header>
+        <h3>Juego de adivinanza</h3>
+        <p>¡Adivina el número aleatorio que se ha generado entre 1 y 100 en el menor número de intentos posibles!</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="calculadora.html">Calculadora</a>
+            <a class="active" href="juego.html">Juego</a>
+            <a href="viajes.html">Venta de Viajes</a>
+            <a href="appClima.html">API Clima</a>
+            <a href="formulario.html">Validar Formulario</a>
+            <a href="buscadorPeliculas.html">Buscador de Películas</a>
+        </nav>
+    </header>
+
+    <h4>Instrucciones</h4>
+    <ul>
+        <li>Comienzas con 100 puntos</li>
+        <li>Cada intento fallido te resta 5 puntos</li>
+        <li>Si te quedas sin puntos antes de adivinar el número pierdes</li>
+    </ul>
+
+    <div class="juego">
+        <!-- El atributo for se utiliza para asociar el label con un elemento de formulario específico. Este atributo debe contener el ID del elemento de formulario al que se refiere el label. -->
+        <label class="ocultos" id="puntaje" for="puntaje"></label> <br>
+        <input id="btnJugar" type="button" value="Jugar" onclick="jugar()"> <br>
+        <label class="ocultos" for="respuesta">Tu respuesta: </label>
+        <!-- Autocomplete se refiere a las opciones ingreadas que se guardan en el input que sirven para autocompletar las respuestas que ingresas -->
+        <input class="ocultos" id="respuesta" type="number" autocomplete="off" max="100" min="1"> <br class="ocultos">
+        <!-- Cuando usas el atributo onclick, debes asegurarte de pasar this como parámetro para referirte al elemento que
+        desencadenó el evento. -->
+        <input class="ocultos" id="btnComprobar" type="button" value="Comprobar" onclick="comprobar()"> <br
+            class="ocultos"> <!-- Ocultamos también los dos últimos saltos de línea o br por estética del espaciado -->
+        <!-- <input id="numero" type="number"> <br> -->
+        <label id="pista" for="pista"></label>
+
+    </div>
+
+    <script src="/js/juego.js"></script>
+    <footer>
+        Todos los derechos reservados &copy; WazTerBel - 2024
+    </footer>
+
+</body>
+
+</html>
